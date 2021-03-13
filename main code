@@ -1,0 +1,9 @@
+while True:
+    text = input(">>>")
+    if "var.create = " in text:
+        var = text.replace("var.create = ", "")
+    if "print." in text:
+        if "print.var" in text:
+            print(var)
+        text = text.replace("print.", "")
+        print(text)
